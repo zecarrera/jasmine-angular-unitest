@@ -1,0 +1,44 @@
+<!doctype html>
+<html ng-app="testingAngularApp">
+
+<head>
+    <title>Testing angular app</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body ng-controller="testingAngularController">
+    <header>
+        <h3>Ticket discount</h3>
+    </header>
+
+    <section>
+        <form ng-submit="calculateDiscount()">
+            <div>
+                <label for="firstname">Firstname</label>
+                <input type="text" name="firstname" id="firstname" ng-model="user.firstname" required/>
+            </div>
+            <div>
+                <label for="lastname">Lastname</label>
+                <input type="text" name="lastname" id="lastname" ng-model="user.lastname" required/>
+            </div>
+            <div>
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob" ng-model="user.dob" required/>
+            </div>
+            <input type="submit" value="Apply" />
+        </form>
+    </section>
+    <button ng-click="toggleDiscountView()">Show/hide discount</button>
+
+    <section ng-if="showDiscount">
+        <h3>Your Discount level:</h3>
+        <div>
+            <div>Name: {{user.firstname}}</div>
+            <div>Lastname: {{user.lastname}}</div>
+            <div ng-model="currentDiscount">Discount: {{currentDiscount}}%</div>
+        </div>
+    </section>
+</body>
+
+</html>
