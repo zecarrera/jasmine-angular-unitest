@@ -19,15 +19,15 @@ testingAngularApp.controller('testingAngularController', function ($rootScope, $
         }
     }
 
-    $scope.toggleDiscountView = function(){
-        $scope.showDiscount = !$scope.showDiscount;
-    }
-    
-    dateIsValid = function(){
+    dateIsValid = function () {
         return $scope.user.dob.toString() !== "Invalid Date" && $scope.user.dob <= currentDate();
     }
 
-    currentDate = function(){
+    currentDate = function () {
         return new Date();
+    }
+
+    $scope.toggleDiscountView = function(){
+        $scope.showDiscount = !$scope.showDiscount;
     }
 });
