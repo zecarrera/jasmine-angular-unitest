@@ -2,7 +2,7 @@
   "name": "unit-testing-angular",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "karma start ./app/js/test/karma.conf.js"
   },
@@ -10,11 +10,16 @@
   "license": "ISC",
   "devDependencies": {
     "bower": "^1.8.4",
+    "express": "^4.16.3",
+    "http": "0.0.0",
     "install": "^0.11.0",
     "jasmine": "^3.1.0",
     "karma": "^2.0.2",
     "karma-jasmine": "^1.1.2",
     "karma-phantomjs-launcher": "^1.0.4",
-    "npm": "^6.1.0"
+    "npm": "^6.1.0",
+    "path": "^0.12.7",
+    "wdio-jasmine-framework": "^0.3.4",
+    "webdriverio": "^4.13.0"
   }
 }
