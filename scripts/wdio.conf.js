@@ -6,14 +6,16 @@ exports.config = {
     maxInstances: 10,
     capabilities: [{
         maxInstances: 5,
-        browserName: 'firefox'
+        browserName: 'firefox',
+        acceptInsecureCerts: true,
+        marionette: true
     }],
     sync: true,
     logLevel: 'silent',
     coloredLogs: true,
     deprecationWarnings: true,
     bail: 0,
-    screenshotPath: './app/js/test/ui/specs/errorShots/',
+    screenshotPath: './../app/js/test/ui/specs/errorShots/',
     baseUrl: 'http://localhost:5000',
     waitforTimeout: 10000,
     connectionRetryTimeout: 90000,

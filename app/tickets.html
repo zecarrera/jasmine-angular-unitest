@@ -50,7 +50,7 @@
                     <input type="date" name="dob" 
                         id="dob" ng-model="user.dob" required/>
                 </div>
-                <input type="submit" value="Apply" class="btn btn-primary" />
+                <input type="submit" value="Apply" id="apply-button" class="btn btn-primary" />
             </form>
         </div>
         <div class="alert alert-info">
@@ -60,7 +60,8 @@
                 <div>
                     <div>Name: {{user.firstname}}</div>
                     <div>Lastname: {{user.lastname}}</div>
-                    <div>Discount: {{currentDiscount}}%</div>
+                    <label for="result-discount">Discount:</label>
+                    <div id="result-discount">{{currentDiscount}}%</div>
                 </div>
                 <button ng-click="toggleDiscountView()" ng-if="showDiscount" class="btn btn-light">Hide discount</button>
 
