@@ -7,7 +7,8 @@ testingAngularApp.controller('testingAngularController', function ($rootScope, $
 
     $scope.calculateDiscount = function(){
         if(dateIsValid()){
-            var year = $scope.user.dob.getFullYear();
+            var dateInputed = new Date($scope.user.dob);
+            var year = dateInputed.getFullYear();
             if (year < 1990) {
                 $scope.currentDiscount = 20;
             } else if (year >= 1990 && year <= 2000) {
@@ -17,17 +18,18 @@ testingAngularApp.controller('testingAngularController', function ($rootScope, $
             }
             $scope.showDiscount = true;
         }
-    }
+    };
 
     dateIsValid = function () {
-        return $scope.user.dob.toString() !== "Invalid Date" && $scope.user.dob <= currentDate();
-    }
+        var date = new Date($scope.user.dob);
+        return date.toString() !== "Invalid Date" && date <= currentDate();
+    };
 
     currentDate = function () {
         return new Date();
-    }
+    };
 
     $scope.toggleDiscountView = function(){
         $scope.showDiscount = !$scope.showDiscount;
-    }
+    };
 });
