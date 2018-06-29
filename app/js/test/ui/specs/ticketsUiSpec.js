@@ -1,12 +1,8 @@
-// var assert = require('assert');
-
 describe('When user enters valid data to apply for a discount', function () {
 
     beforeEach(function(){
         browser.url('http://localhost:5000');
-        browser.setValue("#firstname", "jose");
-        browser.setValue("#lastname", "carrera");
-        browser.setValue("#dob", "2010-12-21");
+        enterUserDetails("john", "test", "2010-12-21");
         browser.click("#apply-button");
     });
 
@@ -16,3 +12,9 @@ describe('When user enters valid data to apply for a discount', function () {
         expect(discount).toEqual("10%");
     });
 });
+
+enterUserDetails = function (firstname, lastname, dateOfBith) {
+    browser.setValue("#firstname", firstname);
+    browser.setValue("#lastname", lastname);
+    browser.setValue("#dob", dateOfBith);
+};
