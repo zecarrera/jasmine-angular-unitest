@@ -11,14 +11,13 @@ Setting up the project:
 - *npm test* to run unit tests
 
 Starting app locally:
-- To start web server
-$ cd app/js
-$ node server.js
+- $ cd app/js
+- $ node server.js
 
 Starting selenium server:
- $ cd scripts
- $ ./start-selenium-server.sh
+ - $ cd scripts
+- $ ./start-selenium-server.sh
  
 Running UI tests: 
- $ cd scripts
- $ ./run-ui-tests.sh
+- $ cd scripts
+- $ ./run-ui-tests.sh
