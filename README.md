@@ -1,5 +1,5 @@
 # jasmine-angular-unitest
-Simple example with jasmine and karma for unit tests
+Simple Web app with angular, to demonstrate testing with jasmine and karma for unit tests and Webdriver.io for UI testing.
 
 Initial dependency:
 - Node is installed
