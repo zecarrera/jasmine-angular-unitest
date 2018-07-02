@@ -16,11 +16,9 @@ $ cd app/js
 $ node server.js
 
 Starting selenium server:
- 1. $ cd scripts
- 2. $ ./start-selenium-server.sh
+ $ cd scripts
+ $ ./start-selenium-server.sh
  
 Running UI tests: 
-
- `$ cd scripts`
- 
- `$ ./run-ui-tests.sh`
+ $ cd scripts
+ $ ./run-ui-tests.sh
