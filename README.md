@@ -20,5 +20,5 @@ Starting selenium server:
  2. $ ./start-selenium-server.sh
  
 Running UI tests: 
- `$ cd scripts
- $ ./run-ui-tests.sh`
+ `$ cd scripts`
+ `$ ./run-ui-tests.sh`
