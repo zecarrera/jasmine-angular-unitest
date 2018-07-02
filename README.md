@@ -1,6 +1,11 @@
 # jasmine-angular-unitest
 Simple example with jasmine and karma for unit tests
 
+Initial dependency:
+- Node is installed
+- NPM is installed
+
+Setting up the project:
 - npm install to set up project
 
 - *npm test* to run unit tests
