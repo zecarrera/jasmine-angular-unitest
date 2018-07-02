@@ -15,12 +15,10 @@ Starting app locally:
 $ cd app/js
 $ node server.js
 
-Running UI tests:
-- Starting selenium server to run UI tests
+Starting selenium server:
  1. $ cd scripts
  2. $ ./start-selenium-server.sh
  
-- Run UI tests 
- 1. $ cd scripts
- 2. $ ./run-ui-tests.sh
- 
+Running UI tests: 
+ `$ cd scripts
+ $ ./run-ui-tests.sh`
