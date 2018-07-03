@@ -11,8 +11,7 @@ Setting up the project:
 - *npm test* to run unit tests
 
 Starting app locally:
-- $ cd app/js
-- $ node server.js
+- *npm start*
 
 Starting selenium server:
  - $ cd scripts
