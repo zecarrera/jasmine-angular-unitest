@@ -1,18 +1,22 @@
 # jasmine-angular-unitest
-Simple example with jasmine and karma for unit tests
+Simple Web app with angular, to demonstrate testing with jasmine and karma for unit tests and Webdriver.io for UI testing.
 
-- npm install to set up project
+Initial requirements:
+- Node is installed
+- NPM is installed
+- Java is installed (needed by selenium server, when running UI tests)
 
+Setting up the project:
+- *npm install* to install dependencies
 - *npm test* to run unit tests
 
-- To start web server
-node server.js
+Starting app locally:
+- *npm start*
 
-- Starting selenium server to run UI tests
- 1. $cd scripts
- 2. ./start-selenium-server.sh
+Starting selenium server:
+ - $ cd scripts
+- $ ./start-selenium-server.sh
  
-- Run UI tests 
- 1. $cd scripts
- 2. ./run-ui-tests.sh
- 
+Running UI tests: 
+- $ cd scripts
+- $ ./run-ui-tests.sh
