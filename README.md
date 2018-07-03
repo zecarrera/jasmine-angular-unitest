@@ -7,7 +7,7 @@ Initial requirements:
 - Java is installed (needed by selenium server, when running UI tests)
 
 Setting up the project:
-- npm install to install dependencies
+- *npm install* to install dependencies
 - *npm test* to run unit tests
 
 Starting app locally:
